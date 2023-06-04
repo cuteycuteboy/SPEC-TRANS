@@ -1,0 +1,62 @@
+@import "main.css";
+
+/* Materials start */
+
+.materials {
+	margin-top: 4.8rem;
+}
+
+.materials__description {
+	margin-left: 3.8rem;
+}
+
+.materials__list {
+	display: flex;
+	flex-direction: column;
+}
+
+.materials__item {
+	display: flex;
+	margin-bottom: 8rem;
+}
+
+.materials__image {
+	width: 58rem;
+	height: 48rem;
+}
+
+.materials__name {
+	font-weight: 600;
+	font-size: 3.2rem;
+	line-height: 130%;
+	margin-bottom: 2.4rem;
+}
+
+.materials__text {
+	font-size: 1.8rem;
+	line-height: 130%;
+}
+
+.materials__price {
+	display: flex;
+	width: 59.3rem;
+	font-weight: 300;
+	font-size: 1.6rem;
+	line-height: 130%;
+	margin-top: 2.4rem;
+}
+
+.materials__text_green,
+.materials__text_green:visited,
+.materials__text_green:link {
+	text-decoration: underline;
+	color: #27AE60;
+}
+
+.materials__line {
+	margin-top: 2rem;
+	height: 0rem;
+	line-height: 0rem;
+	border: 0.1rem solid #CCCCCC;
+	flex-grow: 1;
+}

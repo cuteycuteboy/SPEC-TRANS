@@ -1,0 +1,837 @@
+@import "main.css"(min-width: 768px);
+@import "media.css"(max-width:768px);
+
+@media (min-width: 768px) {
+
+	/*Intro start*/
+	.header_intro {
+		position: absolute;
+		top: 3rem;
+		left: 25rem;
+	}
+
+	.intro {
+		/* height: 100vh; */
+		height: 100rem;
+		background: url(../img/jpg/intro-background.jpg) no-repeat right;
+		background-size: cover;
+	}
+
+	.container_intro {
+		max-width: 77.5rem;
+		margin-left: 25rem;
+	}
+
+	.intro__title {
+		margin-top: 43.2rem;
+		line-height: 7.1rem;
+		font-weight: 700;
+		color: #FFFFFF;
+		font-size: 6rem;
+	}
+
+	.intro__subtitle {
+		margin-top: 3rem;
+		margin-bottom: 6rem;
+		font-weight: 400;
+		font-size: 2rem;
+		line-height: 2.8rem;
+		color: #FFFFFF;
+	}
+
+	/*Intro end*/
+
+	/* Benefits start*/
+	.benefits {
+		padding-top: 8rem;
+	}
+
+	.benefits__title {
+		font-weight: 500;
+		font-size: 4.2rem;
+		line-height: 5rem;
+		margin-bottom: 5.8rem;
+	}
+
+	.benefits__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.benefits__item {
+		box-sizing: border-box;
+		width: 27.3rem;
+		height: 9rem;
+		border: 0.1rem solid #A8A8A8;
+		border-radius: 0.8rem;
+		display: flex;
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+		font-weight: 500;
+		font-size: 1.4rem;
+		line-height: 2rem;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.benefits__text {
+		width: 17.1rem;
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left: 2rem;
+	}
+
+	.benefits__item::before {
+		content: "";
+		display: block;
+		width: 3.2rem;
+		height: 3.2rem;
+		background-size: cover;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	.benefits__item:nth-child(1):before {
+		background-image: url("../img/svg/benefits-1.svg");
+	}
+
+	.benefits__item:nth-child(2):before {
+		background-image: url("../img/svg/benefits-2.svg");
+	}
+
+	.benefits__item:nth-child(3):before {
+		background-image: url("../img/svg/benefits-3.svg");
+	}
+
+	.benefits__item:nth-child(4):before {
+		background-image: url("../img/svg/benefits-4.svg");
+	}
+
+	.benefits__item:nth-child(5):before {
+		background-image: url("../img/svg/benefits-5.svg");
+	}
+
+
+	/* Benefits end*/
+
+	/* Materials start*/
+	.materials {
+		padding-top: 8rem;
+	}
+
+	.materials__title {
+		font-weight: 500;
+		font-size: 4.2rem;
+		line-height: 5rem;
+		margin-bottom: 6rem;
+	}
+
+	.materials__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.container_materials {
+		overflow-x: visible;
+	}
+
+	.materials__item {
+		position: relative;
+		width: 34rem;
+		height: 52.4rem;
+		border-radius: 0.8rem;
+		font-weight: 700;
+		font-size: 4rem;
+		line-height: 4.7rem;
+		background-size: cover;
+		padding-bottom: 4rem;
+		transition: 0.3s;
+	}
+
+	.materials__item:hover {
+		margin-top: -2rem;
+		box-shadow: 0rem 0 3rem rgba(0, 0, 0, 0.8);
+
+	}
+
+	.materials__item>a {
+		display: flex;
+		align-items: flex-end;
+		width: 26rem;
+		margin-left: auto;
+		margin-right: auto;
+		height: 100%;
+		color: #FFFFFF;
+	}
+
+	.materials__item:nth-child(1) {
+		background-image: url("../img/jpg/materials-sand.jpg");
+	}
+
+	.materials__item:nth-child(2) {
+		background-image: url("../img/jpg/materials-rubble.jpg");
+	}
+
+	.materials__item:nth-child(3) {
+		background-image: url("../img/jpg/materials-asphalt.jpg");
+	}
+
+	.materials__item:nth-child(4) {
+		background-image: url("../img/jpg/materials-equipment.jpg");
+	}
+
+	/* Materials end */
+
+	/* About start*/
+	.about {
+		padding-top: 8rem;
+		margin-bottom: 8rem;
+	}
+
+	.about__title {
+		font-weight: 500;
+		font-size: 4.2rem;
+		line-height: 5rem;
+		margin-bottom: 2.8rem;
+		margin-top: 11.3rem;
+	}
+
+	.about__box {
+		height: 44.6rem;
+		width: 70rem;
+	}
+
+	.about__text_small {
+		color: #67675F;
+		width: 58rem;
+	}
+
+
+	.about__box_right {
+		background: #F8F8F8;
+		border-radius: 2.4rem;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.about__text_big {
+		font-weight: 300;
+		font-size: 8.8rem;
+		line-height: 12.5rem;
+		margin-bottom: 1.8rem;
+	}
+
+	.about__text_gray {
+		color: #67675F;
+		font-size: 2.4rem;
+		line-height: 3.4rem;
+	}
+
+	.about__text_green {
+		font-weight: 500;
+		font-size: 4rem;
+		line-height: 5.7rem;
+		vertical-align: top;
+		color: #27AE60;
+	}
+
+	.about__wrapper {
+		width: 35rem;
+		margin-top: 11.4rem;
+		text-align: center;
+	}
+
+	/* About end*/
+
+	/* Callback start */
+	.call-back {
+		background-color: #F8F8F8;
+	}
+
+	.container_call-back {
+		max-width: 142rem;
+		margin: 0 auto;
+		overflow-x: hidden;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.call-back__column_left {
+		width: 49rem;
+		margin-top: 9rem;
+	}
+
+	.call-back__column_right {
+		width: 68.6rem;
+	}
+
+	.call-back__column_right::before,
+	.call-back__column_right::after {
+		content: "";
+		display: block;
+		width: 32rem;
+		background-color: #27AE60;
+		height: 5.6rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.call-back__title {
+		font-weight: 500;
+		font-size: 4.2rem;
+		line-height: 5rem;
+		margin-bottom: 2.3rem;
+	}
+
+	.call-back__text_green {
+		font-size: 2.8rem;
+		line-height: 3.9rem;
+		color: #27AE60;
+		margin-bottom: 3.1rem;
+	}
+
+	.call-back__text_black {
+		font-weight: 300;
+		font-size: 2.2rem;
+		line-height: 3.1rem;
+		margin-bottom: 5.3rem;
+	}
+
+	.call-back__form {
+		padding-top: 4.5rem;
+		padding-bottom: 3rem;
+		padding-left: 4.5rem;
+		width: 68.6rem;
+		background-color: #FFFFFF;
+		box-shadow: 0rem 0.4rem 4rem rgba(7, 17, 51, 0.07);
+		border-radius: 1.2rem;
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+
+	}
+
+	.call-back__input_small {
+		border: 0.1rem solid #DDDDDD;
+		border-radius: 0.6rem;
+		width: 59.6rem;
+		height: 6.5rem;
+	}
+
+	.call-back__input_big {
+		width: 59.3rem;
+		height: 17.2rem;
+		border: 0.1rem solid #DDDDDD;
+		border-radius: 0.6rem;
+		margin-bottom: 4.3rem;
+		-webkit-border-radius: 0.6rem;
+		-moz-border-radius: 0.6rem;
+		resize: none;
+	}
+
+	.call-back__input {
+		display: block;
+		margin-top: 2rem;
+	}
+
+	.call-back__form:first-child() {
+		margin-top: 0rem;
+	}
+
+	.call-back__text_small {
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+	}
+
+	/* Callback end */
+
+	/* Delivery start*/
+
+	.delivery {
+		height: 98rem;
+		margin-bottom: 6.5rem;
+	}
+
+	.container_right {
+		width: 167rem;
+		height: 100%;
+		margin-left: auto;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.delivery__title {
+		font-weight: 500;
+		font-size: 4.2rem;
+		line-height: 5rem;
+		margin-bottom: 3rem;
+		margin-top: 4rem;
+	}
+
+	.delivery__column_left {
+		width: 70rem;
+	}
+
+	.delivery__column_right {
+		width: 95rem;
+	}
+
+	.delivery__text_lead {
+		font-size: 2rem;
+		line-height: 2.8rem;
+		width: 58rem;
+	}
+
+	.delivery__list {
+		display: flex;
+		flex-direction: column;
+		height: 28.6rem;
+		justify-content: space-between;
+		margin-bottom: 17.8rem;
+		margin-top: 6.4rem;
+	}
+
+	.delivery__item {
+		display: flex;
+		font-weight: 300;
+		font-size: 1.6rem;
+		line-height: 2.2rem;
+	}
+
+	.delivery__item::before {
+		display: block;
+		background-repeat: no-repeat;
+		content: "";
+		background-image: url("../img/svg/delivery-star.svg");
+		background-size: cover;
+		margin-right: 1.9rem;
+		width: 2.4rem;
+		height: 2.4rem;
+	}
+
+	.delivery__text_bottom {
+		display: block;
+		color: #848692;
+		font-size: 1.6rem;
+		line-height: 1.6rem;
+	}
+
+	.delivery__box {
+		width: 34rem;
+		height: 20rem;
+		background: #F8F8F8;
+		text-align: center;
+	}
+
+	.delivery__wrapper {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.delivery__text_geo {
+		display: block;
+		font-weight: 500;
+		font-size: 1.8rem;
+		line-height: 1.8rem;
+		margin-top: 7.1rem;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	/* intro start*/
+	.container_intro {
+		max-width: 339rem;
+	}
+
+	.intro {
+		/* height: 100vh; */
+		height: 600rem;
+		background: linear-gradient(rgba(0, 0, 0, 0) 39.07%, rgba(35, 35, 35, 0.7) 100%), url(../img/jpg/intro-background-mobile.jpg) no-repeat;
+		background-size: cover;
+		/* background-attachment: fixed; */
+	}
+
+	.intro__title {
+		font-weight: 700;
+		font-size: 32rem;
+		line-height: 38rem;
+		color: #FFFFFF;
+		margin-top: 265rem;
+	}
+
+
+	.intro__subtitle {
+		margin-top: 15rem;
+		margin-bottom: 17rem;
+		font-weight: 400;
+		font-size: 16rem;
+		line-height: 140%;
+		color: #FFFFFF;
+	}
+
+	/* intro end*/
+
+	/*benefits start*/
+	.benefits {
+		padding-top: 60rem;
+		margin-bottom: 60rem;
+	}
+
+	.benefits__title {
+		font-weight: 500;
+		font-size: 24rem;
+		line-height: 28rem;
+		margin-bottom: 15rem;
+	}
+
+	.benefits__list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.benefits__item {
+		box-sizing: border-box;
+		width: 335rem;
+		height: 88rem;
+		border: 1rem solid #A8A8A8;
+		border-radius: 8rem;
+		display: flex;
+		padding-left: 25rem;
+		padding-right: 87rem;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-size: 14rem;
+		line-height: 140%;
+		margin-top: 10rem;
+	}
+
+	.benefits__text {
+		width: 171rem;
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left: 20rem;
+	}
+
+	.benefits__item::before {
+		content: "";
+		display: block;
+		width: 32rem;
+		height: 32rem;
+		background-size: cover;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	.benefits__item:nth-child(1):before {
+		background-image: url("../img/svg/benefits-1.svg");
+	}
+
+	.benefits__item:nth-child(2):before {
+		background-image: url("../img/svg/benefits-2.svg");
+	}
+
+	.benefits__item:nth-child(3):before {
+		background-image: url("../img/svg/benefits-3.svg");
+	}
+
+	.benefits__item:nth-child(4):before {
+		background-image: url("../img/svg/benefits-4.svg");
+	}
+
+	.benefits__item:nth-child(5):before {
+		background-image: url("../img/svg/benefits-5.svg");
+	}
+
+	/*benefits end*/
+
+	/* materials start */
+
+	.materials {
+		margin-bottom: 60rem;
+	}
+
+	.materials__title {
+		font-weight: 500;
+		font-size: 24rem;
+		line-height: 28rem;
+		margin-bottom: 10rem;
+	}
+
+	.materials__list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.materials__item {
+		margin-top: 15rem;
+		position: relative;
+		width: 335rem;
+		height: 226rem;
+		border-radius: 8rem;
+		font-weight: 700;
+		font-size: 24rem;
+		line-height: 28rem;
+		background-size: cover;
+		padding-bottom: 25rem;
+		color: #FFFFFF;
+	}
+
+	.materials__item>a {
+		display: flex;
+		align-items: flex-end;
+		width: 263rem;
+		margin-left: 25rem;
+		height: 100%;
+		color: #FFFFFF;
+	}
+
+	.materials__item:nth-child(1) {
+		background-image: url("../img/jpg/materials-sand.jpg");
+	}
+
+	.materials__item:nth-child(2) {
+		background-image: url("../img/jpg/materials-rubble.jpg");
+	}
+
+	.materials__item:nth-child(3) {
+		background-image: url("../img/jpg/materials-asphalt.jpg");
+	}
+
+	.materials__item:nth-child(4) {
+		background-image: url("../img/jpg/materials-equipment.jpg");
+	}
+
+
+	/* materials end */
+
+	/* about start */
+
+	.about {
+		margin-bottom: 60rem;
+	}
+
+	.about__title {
+		font-weight: 500;
+		font-size: 24rem;
+		line-height: 28rem;
+		margin-bottom: 25rem;
+	}
+
+	.about__text_small {
+		color: #67675F;
+		font-size: 14rem;
+		line-height: 20rem;
+	}
+
+	.about__box_left {
+		margin-bottom: 20rem;
+	}
+
+	.about__box_right {
+		width: 335rem;
+		/* height: 338rem; */
+		background: #F8F8F8;
+		border-radius: 24rem;
+		padding-top: 40rem;
+		padding-bottom: 40rem;
+	}
+
+	.about__wrapper:nth-child(1) {
+		margin-bottom: 40rem;
+	}
+
+	.about__wrapper {
+		text-align: center;
+	}
+
+	.about__text_big {
+		font-weight: 600;
+		font-size: 50rem;
+		line-height: 71rem;
+		margin-bottom: 8rem;
+	}
+
+	.about__text_green {
+		position: relative;
+		top: -20rem;
+		left: -7rem;
+		font-weight: 500;
+		font-size: 40rem;
+		line-height: 57rem;
+		vertical-align: top;
+		color: #27AE60;
+	}
+
+	.about__text_gray {
+		font-size: 18rem;
+		line-height: 26rem;
+		color: #67675F;
+	}
+
+	/* about end */
+
+	/* callback start */
+	.call-back {
+		margin-bottom: 20rem;
+	}
+
+	.container_call-back {
+		overflow: visible;
+		margin: 0 auto;
+		width: 365rem;
+	}
+
+	.call-back__column_left {
+		width: 335rem;
+		margin: 0 auto;
+	}
+
+	.call-back__column_right {
+		padding-top: 20rem;
+		padding-bottom: 20rem;
+		border-radius: 12rem;
+		box-shadow: 0rem 4rem 40rem rgba(7, 17, 51, 0.07);
+	}
+
+	.call-back__title {
+		font-weight: 500;
+		font-size: 24rem;
+		line-height: 28rem;
+		margin-bottom: 23rem;
+	}
+
+	.call-back__text_green {
+		font-size: 16rem;
+		line-height: 22rem;
+		color: #27AE60;
+		margin-bottom: 8rem;
+	}
+
+	.call-back__text_black {
+		font-weight: 400;
+		font-size: 14rem;
+		line-height: 20rem;
+		color: #67675F;
+	}
+
+	.call-back__form {
+		width: 335rem;
+		margin: 0 auto;
+	}
+
+	.call-back__input {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	.call-back__input_small {
+		width: 335rem;
+		height: 48rem;
+		border: 1rem solid #DDDDDD;
+		border-radius: 6rem;
+		margin-bottom: 15rem;
+	}
+
+	.call-back__input_big {
+		width: 335rem;
+		height: 128rem;
+		border: 1rem solid #DDDDDD;
+		border-radius: 6rem;
+		-webkit-border-radius: 6rem;
+		-moz-border-radius: 6rem;
+		resize: none;
+		margin-bottom: 20rem;
+	}
+
+	.call-back__text_small {
+		display: block;
+		font-size: 12rem;
+		line-height: 12rem;
+		margin-bottom: 20rem;
+		text-align: center;
+	}
+
+	/* callback end */
+
+	/* delivery start */
+
+
+	.delivery__column_left {
+		width: 335rem;
+		margin: 0 auto;
+	}
+
+	.delivery__column_right {
+		width: 100%;
+		height: 387rem;
+		margin-top: 30rem;
+	}
+
+
+	.delivery__title {
+		font-weight: 500;
+		font-size: 24rem;
+		line-height: 28rem;
+		margin-bottom: 23rem;
+	}
+
+	.delivery__text_lead {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14rem;
+		line-height: 20rem;
+		color: #67675F;
+		margin-bottom: 25rem;
+	}
+
+
+	.delivery__list {
+		display: flex;
+		flex-direction: column;
+		/* height: 28.6rem; */
+		/* justify-content: space-between; */
+		margin-bottom: 30rem;
+	}
+
+	.delivery__item {
+		font-weight: 300;
+		font-size: 16rem;
+		line-height: 22rem;
+		display: flex;
+		margin-bottom: 15rem;
+	}
+
+	.delivery__item::before {
+		position: relative;
+		flex-shrink: 0;
+		display: inline-block;
+		background-repeat: no-repeat;
+		content: "";
+		background-image: url("../img/svg/delivery-star.svg");
+		background-size: cover;
+		margin-right: 19rem;
+		top: 7rem;
+		width: 24rem;
+		height: 24rem;
+	}
+
+	.delivery__box {
+		width: 335rem;
+		height: 100rem;
+		background: #F8F8F8;
+		text-align: center;
+		padding-top: 21rem;
+		margin-bottom: 15rem;
+	}
+
+	.delivery__text_geo {
+		display: block;
+		font-weight: 500;
+		font-size: 18rem;
+		line-height: 18rem;
+	}
+
+	/* delivery end */
+}

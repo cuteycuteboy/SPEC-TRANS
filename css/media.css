@@ -1,0 +1,262 @@
+@import "reset.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('Gilroy-Regular.eot');
+	src: local('Gilroy Regular'), local('Gilroy-Regular'),
+		url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gilroy-Regular.woff') format('woff'),
+		url('../fonts/Gilroy-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+.monitor {
+	display: none !important;
+}
+
+html {
+	font-size: calc(100vw / 375 * 1);
+}
+
+body {
+	font-family: 'Rubik', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18rem;
+	line-height: 26rem;
+	color: #1D1D1B;
+	text-decoration: none;
+}
+
+a {
+	color: #1D1D1B;
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+.container {
+	max-width: 335rem;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+.green {
+	color: #27AE60;
+}
+
+.button,
+input[type="submit"] {
+	display: inline-block;
+	font-weight: 500;
+	font-size: 16rem;
+	line-height: 19rem;
+	padding: 20rem 36rem;
+	border-radius: 8rem;
+	color: #FFFFFF;
+	background-color: #27AE60;
+}
+
+.button_small {
+	display: block;
+	padding: 10rem 10rem;
+	font-weight: 500;
+	font-size: 12rem;
+	line-height: 12rem;
+	width: 120rem;
+	height: 32rem;
+	border-radius: 5rem;
+}
+
+
+/* header start */
+
+.header__logo {
+	width: 112rem;
+	position: fixed;
+	z-index: 2;
+	left: 20rem;
+	top: 10rem;
+}
+
+.header__button {
+	display: flex;
+	flex-direction: column;
+	width: 44rem;
+	height: 44rem;
+	position: fixed;
+	top: 14rem;
+	left: 321rem;
+	z-index: 4;
+}
+
+.header__button span {
+	display: inline-block;
+	width: 30rem;
+	height: 2rem;
+	position: fixed;
+	top: 24rem;
+	left: 331rem;
+	background: #1D1D1B;
+	border-radius: 12rem;
+	z-index: 3;
+	transition: transform 0.5s;
+}
+
+
+.header__list {
+	position: fixed;
+	display: flex;
+	padding-top: 101rem;
+	padding-left: 20rem;
+	flex-direction: column;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: #FFFFFF;
+	transform: translateX(-100%);
+	transition: 0.5s;
+	z-index: 1;
+}
+
+.header__list.active {
+	transform: translateX(0);
+}
+
+
+
+.header__button span:nth-of-type(2) {
+	top: 29rem;
+}
+
+.header__button span:nth-of-type(3) {
+	top: 34rem;
+}
+
+.header__button.active span:nth-of-type(1) {
+	display: none;
+}
+
+.header__button.active span:nth-of-type(2) {
+	/* top: 50%; */
+	width: 20rem;
+	transform: translate(-50%, 0%) rotate(45deg);
+	top: 25rem;
+}
+
+.header__button.active span:nth-of-type(3) {
+	/* top: 50%; */
+	width: 20rem;
+	top: 25rem;
+	transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+
+.header__item {
+	font-size: 20rem;
+	line-height: 24rem;
+	margin-bottom: 48rem;
+}
+
+/* header end */
+
+
+/* footer start */
+
+.footer {
+	background-color: #424141;
+	padding-top: 12rem;
+	padding-bottom: 22rem;
+}
+
+.footer__wrapper {
+	display: flex;
+}
+
+.footer__logo {
+	display: inline-block;
+	width: 109rem;
+	height: 43rem;
+	box-sizing: border-box;
+}
+
+.footer__socials {
+	display: inline-block;
+	width: 24rem;
+	height: 24rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 12rem;
+}
+
+
+.footer__socials:nth-child(2) {
+	background-image: url("../img/svg/footer-vk.svg");
+	margin-left: 124rem;
+}
+
+.footer__socials:nth-child(3) {
+	background-image: url("../img/svg/footer-fb.svg");
+	margin-left: 10rem;
+}
+
+.footer__socials:nth-child(4) {
+	background-image: url("../img/svg/footer-wa.svg");
+	margin-left: 10rem;
+}
+
+.footer__wrapper:nth-child(2) {
+	margin-top: 14rem;
+}
+
+.footer__item {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14rem;
+	line-height: 17rem;
+	color: #FFFFFF;
+	position: relative;
+	top: 11rem;
+}
+
+.footer__item:nth-child(2) {
+	margin-left: 34rem;
+}
+
+.footer__tel {
+	display: block;
+	width: 140rem;
+	height: 38rem;
+	margin-left: 34rem;
+	border: 1rem solid #FFFFFF;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14rem;
+	line-height: 14rem;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 12rem;
+}
+
+.footer__policy {
+	margin-top: 22rem;
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12rem;
+	line-height: 14rem;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+/* footer end */

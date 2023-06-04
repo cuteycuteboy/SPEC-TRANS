@@ -1,0 +1,258 @@
+@import "reset.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('Gilroy-Regular.eot');
+	src: local('Gilroy Regular'), local('Gilroy-Regular'),
+		url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gilroy-Regular.woff') format('woff'),
+		url('../fonts/Gilroy-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	font-size: calc(100vw / 1920 * 10);
+}
+
+.mobile {
+	display: none !important;
+}
+
+body {
+	font-family: 'Rubik', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.8rem;
+	line-height: 2.6rem;
+	color: #1D1D1B;
+	text-decoration: none;
+}
+
+a {
+	color: #1D1D1B;
+	text-decoration: none;
+}
+
+
+li {
+	list-style-type: none;
+}
+
+.container {
+	max-width: 142rem;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+.container_flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.button,
+input[type="submit"] {
+	display: inline-block;
+	font-weight: 500;
+	font-size: 2.2rem;
+	line-height: 2.6rem;
+	padding: 2rem 3.6rem;
+	color: #FFFFFF;
+	background-color: #27AE60;
+	border-radius: 0.8rem;
+}
+
+.green {
+	color: #27AE60;
+}
+
+/* Header start*/
+
+.header__nav {
+	display: flex;
+	align-items: center;
+}
+
+.header__list {
+	display: flex;
+	margin-left: 9.1rem;
+}
+
+.header__logo {
+	width: 20.9rem;
+}
+
+.header__item {
+	margin-left: 4.8rem;
+}
+
+/*Header end*/
+
+/* Callback start */
+.call-back {
+	background-color: #F8F8F8;
+}
+
+
+.call-back__column_left {
+	width: 49rem;
+	margin-top: 9rem;
+}
+
+.call-back__column_right {
+	width: 68.6rem;
+}
+
+.call-back__column_right::before,
+.call-back__column_right::after {
+	content: "";
+	display: block;
+	width: 32rem;
+	background-color: #27AE60;
+	height: 5.6rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.call-back__title {
+	font-weight: 500;
+	font-size: 4.2rem;
+	line-height: 5rem;
+	margin-bottom: 2.3rem;
+}
+
+.call-back__text_green {
+	font-size: 2.8rem;
+	line-height: 3.9rem;
+	color: #27AE60;
+	margin-bottom: 3.1rem;
+}
+
+.call-back__text_black {
+	font-weight: 300;
+	font-size: 2.2rem;
+	line-height: 3.1rem;
+}
+
+.call-back__form {
+	padding-top: 4.5rem;
+	padding-bottom: 3rem;
+	padding-left: 4.5rem;
+	width: 68.6rem;
+	background-color: #FFFFFF;
+	box-shadow: 0rem 0.4rem 4rem rgba(7, 17, 51, 0.07);
+	border-radius: 1.2rem;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+
+}
+
+.call-back__input_small {
+	border: 0.1rem solid #DDDDDD;
+	border-radius: 0.6rem;
+	width: 59.6rem;
+	height: 6.5rem;
+}
+
+.call-back__input_big {
+	width: 59.3rem;
+	height: 17.2rem;
+	border: 0.1rem solid #DDDDDD;
+	border-radius: 0.6;
+	margin-bottom: 4.3rem;
+	-webkit-border-radius: 0.5rem;
+	-moz-border-radius: 0.5rem;
+	resize: none;
+}
+
+.call-back__input {
+	display: block;
+	margin-top: 2rem;
+}
+
+.call-back__form:first-child() {
+	margin-top: 0rem;
+}
+
+.call-back__text_small {
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+}
+
+/* Callback end */
+
+/* Footer start */
+.footer {
+	background-color: #424141;
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+.footer__nav {
+	height: 12.8rem;
+	display: flex;
+	align-items: center;
+}
+
+.footer__policy {
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+	margin-left: 5rem;
+	margin-right: 13.4rem;
+}
+
+.footer__logo {
+	width: 20.9rem;
+}
+
+.footer__item {
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+	margin-left: 5rem;
+	color: #FFFFFF;
+}
+
+.footer__socials {
+	width: 2.4rem;
+	height: 2.4rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: 2.5rem;
+}
+
+
+.footer__socials:nth-child(5) {
+	background-image: url("../img/svg/footer-vk.svg");
+	margin-left: 16.6rem;
+}
+
+.footer__socials:nth-child(6) {
+	background-image: url("../img/svg/footer-fb.svg");
+}
+
+.footer__socials:nth-child(7) {
+	background-image: url("../img/svg/footer-wa.svg");
+}
+
+.footer__tel {
+	display: block;
+	width: 15.4rem;
+	height: 4.2rem;
+	margin-left: 3.8rem;
+	border: 0.1rem solid #FFFFFF;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 1.5rem;
+}
+
+/* Footer end */
